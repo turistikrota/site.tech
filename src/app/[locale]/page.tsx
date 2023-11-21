@@ -7,6 +7,7 @@ import FeaturesSection from "./components/FeaturesSection";
 import HeadSection from "./components/HeadSection";
 import HiringSection from "./components/HiringSection";
 import IntegrationSection from "./components/IntegrationSection";
+import OurServicesSection from "./components/OurServicesSection";
 import PricingDetailedSection from "./components/PricingDetailedSection";
 import WhatWeDoSection from "./components/WhatWeDoSection";
 
@@ -21,6 +22,7 @@ export default function Home() {
       <IntegrationSection />
       <FeaturesSection />
       <BlogSection />
+      <OurServicesSection />
       <HiringSection />
       <FaqSection />
     </DefaultLayout>
