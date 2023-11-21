@@ -10,11 +10,11 @@ type Props = {
 
 export function Layout({ children, fullHeight = false, withoutFooter = false }: Props) {
   return (
-<>
+    <>
       <DefaultHeader></DefaultHeader>
       <main>{children}</main>
       {!withoutFooter && <BasicFooter></BasicFooter>}
-      </>
+    </>
   )
 }
 

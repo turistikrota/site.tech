@@ -8,7 +8,6 @@ import { getTranslations } from 'next-intl/server'
 import { Arimo } from 'next/font/google'
 import '../globals.css'
 
-
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations('base')
   return {
@@ -79,25 +78,18 @@ const arimo = Arimo({
   preload: true,
 })
 
-export default async function RootLayout({
-  children,
-  params:{locale},
-}: React.PropsWithChildren<LayoutProps>) {
+export default async function RootLayout({ children, params: { locale } }: React.PropsWithChildren<LayoutProps>) {
   const messages = (await import(`@/messages/${locale}.json`)).default
   return (
     <html lang={locale} className={arimo.className}>
       <body>
-      <NextIntlClientProvider locale={locale} messages={messages}>
-      {children}
-      </NextIntlClientProvider>
-        
-        <span
-    className="-z-1 bg-primary-600/40 dark:bg-primary-500/30 fixed -start-[20%] top-[10%] h-[400px] w-[400px] rounded-full blur-[200px] md:start-[10%] lg:h-[600px] lg:w-[600px]"
-  />
-  <span
-    className="-z-1 bg-secondary-600/40 dark:bg-secondary-500/30 fixed -end-[20%] bottom-[10%] h-[400px] w-[400px] rounded-full blur-[200px] md:end-[10%] lg:h-[600px] lg:w-[600px]"
-  />
-        </body>
+        <NextIntlClientProvider locale={locale} messages={messages}>
+          {children}
+        </NextIntlClientProvider>
+
+        <span className='fixed -start-[20%] top-[10%] -z-1 h-[400px] w-[400px] rounded-full bg-primary-600/40 blur-[200px] dark:bg-primary-500/30 md:start-[10%] lg:h-[600px] lg:w-[600px]' />
+        <span className='fixed -end-[20%] bottom-[10%] -z-1 h-[400px] w-[400px] rounded-full bg-secondary-600/40 blur-[200px] dark:bg-secondary-500/30 md:end-[10%] lg:h-[600px] lg:w-[600px]' />
+      </body>
     </html>
   )
 }

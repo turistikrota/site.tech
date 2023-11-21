@@ -14,8 +14,7 @@ export default function DefaultHeader() {
           </HeaderLogo>
         </MobileHeader.Left>
         <MobileHeader.Fill className='hidden md:flex'>{``}</MobileHeader.Fill>
-        <MobileHeader.Right>
-        </MobileHeader.Right>
+        <MobileHeader.Right></MobileHeader.Right>
       </MobileHeader>
     </>
   )

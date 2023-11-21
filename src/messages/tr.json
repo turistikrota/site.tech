@@ -1,5 +1,4 @@
 {
-    
   "notfound": {
     "title": "Bir şey eksik.",
     "subtitle": "Üzgünüz, o sayfayı bulamıyoruz. Ana sayfada keşfedilecek çok şey bulacaksınız.",
@@ -10,7 +9,7 @@
       "keywords": "404, Sayfa Bulunamadı, Turistik Rota, Tatil Planlama, Tur Rezervasyonu"
     }
   },
-  
+
   "base": {
     "meta": {
       "title": "Turistik Rota | Tatil Planlama | Tur Rezervasyonu",
