@@ -1,6 +1,6 @@
 export default function PricingDetailedSection() {
   return (
-    <section className='py-16 xl:py-24'>
+    <section className='py-16 xl:py-24 max-w-7xl mx-auto'>
       <div className='aos-init aos-animate container' data-aos='fade-up' data-aos-duration='1500'>
         <div className='text-center'>
           <span className='rounded-full bg-primary/10 px-3 py-1 text-sm font-medium text-primary'>Pricing</span>
