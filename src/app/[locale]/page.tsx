@@ -13,8 +13,8 @@ export default function Home({ params: { locale } }: LayoutProps) {
   return (
     <DefaultLayout>
       <HeadSection />
-      <WhatWeDoSection />
       <CountSection />
+      <WhatWeDoSection />
       <OurServicesSection />
       <IntegrationSection />
       <FeaturesSection />

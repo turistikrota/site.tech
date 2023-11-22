@@ -136,9 +136,9 @@ export default function FeaturesSection() {
           <h2 className='my-5 text-xl font-semibold md:text-3xl'>Why Choose Us</h2>
           <p className='text-slate-500'>The benefits that will make you comfort</p>
         </div>
-        <div className='mt-16 grid grid-cols-1 gap-6 lg:grid-cols-2'>
+        <div className='mt-16 grid grid-cols-1 gap-4 lg:grid-cols-2'>
           {Items.map((item, idx) => (
-            <div key={idx} className='rounded bg-white/5 p-6'>
+            <div key={idx} className='rounded-md bg-slate-500/5 p-4 dark:bg-white/5'>
               <div className='flex gap-5'>
                 <div className='flex h-12 w-12 items-center justify-center gap-5 rounded-md bg-primary/10'>
                   {item.icon}

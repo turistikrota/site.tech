@@ -112,11 +112,7 @@ export default function BlogSection({ locale }: Props) {
         </div>
         <div className='mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4'>
           {Blogs.map((blog, idx) => (
-            <div
-              className='aos-init aos-animate group rounded-md bg-white/5 shadow-md'
-              data-aos='fade-up'
-              data-aos-duration='500'
-            >
+            <div className='group rounded-md bg-slate-500/5 dark:bg-white/5'>
               <div className='relative'>
                 <div className='absolute end-4 top-3'>
                   <span className={`rounded-md px-3 py-1 text-sm font-medium text-white ${TagClasses[blog.tag]}`}>

@@ -98,7 +98,10 @@ export default function WhatWeDoSection() {
         </div>
         <div className='grid grid-cols-1 gap-4 pt-12 md:grid-cols-2 xl:grid-cols-3'>
           {Items.map((item, idx) => (
-            <div className='animate-fade-in rounded-md bg-white/5 p-4 transition-all duration-200' key={idx}>
+            <div
+              className='animate-fade-in rounded-md bg-slate-500/5 p-4 transition-all duration-200 dark:bg-white/5'
+              key={idx}
+            >
               <div className='flex h-12 w-12 items-center justify-center rounded-md bg-primary/20'>{item.icon}</div>
               <h4 className='my-5 text-base font-medium'>{item.title}</h4>
               <p className='text-slate-400'>{item.description}</p>

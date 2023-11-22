@@ -1,7 +1,7 @@
 export default function HeadSection() {
   return (
     <section className='relative mx-auto max-w-7xl px-4 py-44'>
-      <div className=' hero-with-shapes'>
+      <div className='hero-with-shapes'>
         <div className='shape1 bg-primary bg-opacity-20'></div>
         <div className='shape2 bg-secondary bg-opacity-20'></div>
         <div className='shape3 bg-primary bg-opacity-20'></div>

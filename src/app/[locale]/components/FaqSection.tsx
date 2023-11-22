@@ -48,7 +48,7 @@ export default function FaqSection() {
 
         <div data-fc-type='accordion' className='mt-14 lg:mx-auto lg:w-3/4 2xl:w-2/3'>
           {Items.map((item, idx) => (
-            <div key={idx} className='mt-4 rounded-md bg-white/5'>
+            <div key={idx} className='mt-4 rounded-md bg-slate-500/5 dark:bg-white/5'>
               <button
                 className='open fc-col-open inline-flex w-full items-center justify-between p-5 text-left font-semibold transition'
                 onClick={() => toggle(idx)}

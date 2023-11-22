@@ -62,10 +62,10 @@ export default function IntegrationSection() {
           </p>
         </div>
         <div className='pt-16'>
-          <div className='grid grid-cols-1 gap-7 xl:grid-cols-2'>
+          <div className='grid grid-cols-1 gap-4 xl:grid-cols-2'>
             {Items.map((item, idx) => (
               <div key={idx}>
-                <div className='flex items-center gap-5 rounded bg-white/5 p-4'>
+                <div className='flex items-center gap-6 rounded-md bg-slate-500/5 p-4 dark:bg-white/5'>
                   <i className={`bx w-16 text-7xl ${item.icon} ${item.iconColor}`} />
                   <div>
                     <h1>{item.title}</h1>

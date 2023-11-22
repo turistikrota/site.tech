@@ -87,8 +87,8 @@ export default async function RootLayout({ children, params: { locale } }: React
           {children}
         </NextIntlClientProvider>
 
-        <span className='fixed -start-[20%] top-[10%] -z-1 h-[400px] w-[400px] rounded-full bg-primary-600/40 blur-[200px] dark:bg-primary-500/30 md:start-[10%] lg:h-[600px] lg:w-[600px]' />
-        <span className='fixed -end-[20%] bottom-[10%] -z-1 h-[400px] w-[400px] rounded-full bg-secondary-600/40 blur-[200px] dark:bg-secondary-500/30 md:end-[10%] lg:h-[600px] lg:w-[600px]' />
+        <span className='fixed -start-[20%] top-[10%] -z-1 h-[400px] w-[400px] rounded-full bg-primary-500/25 blur-[200px] dark:bg-primary-500/30 md:start-[10%] lg:h-[600px] lg:w-[600px]' />
+        <span className='fixed -end-[20%] bottom-[10%] -z-1 h-[400px] w-[400px] rounded-full bg-secondary-500/25 blur-[200px] dark:bg-secondary-500/30 md:end-[10%] lg:h-[600px] lg:w-[600px]' />
       </body>
     </html>
   )
