@@ -132,7 +132,7 @@ export default function BlogSection({ locale }: Props) {
                   {blog.title}
                 </Link>
               </h4>
-              <p className='my-2 text-slate-400'>
+              <p className='my-2 text-slate-500 dark:text-slate-400'>
                 {blog.description.slice(0, 100)}
                 ...&nbsp;
                 <Link

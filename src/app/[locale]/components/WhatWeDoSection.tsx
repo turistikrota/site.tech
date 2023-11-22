@@ -90,7 +90,7 @@ export default function WhatWeDoSection() {
           <Section.Card key={idx}>
             <div className='flex h-12 w-12 items-center justify-center rounded-md bg-primary/20'>{item.icon}</div>
             <h4 className='my-5 text-base font-medium'>{item.title}</h4>
-            <p className='text-slate-400'>{item.description}</p>
+            <p className='text-slate-500 dark:text-slate-400'>{item.description}</p>
           </Section.Card>
         ))}
       </div>

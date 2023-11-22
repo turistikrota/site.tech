@@ -75,7 +75,9 @@ export default function OurServicesSection() {
               <a className='h5 text-lg transition duration-500 ease-in-out hover:text-violet-600' href='/services'>
                 {item.title}
               </a>
-              <p className='mt-3 text-slate-400 transition duration-500 ease-in-out'>{item.description}</p>
+              <p className='mt-3 text-slate-500 transition duration-500 ease-in-out dark:text-slate-400'>
+                {item.description}
+              </p>
             </div>
           </div>
         ))}

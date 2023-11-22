@@ -61,7 +61,7 @@ export default function FaqSection() {
                 active === idx ? 'animate-fade-in' : 'hidden animate-fade-out'
               }`}
             >
-              <p className='p-5 pt-3 text-gray-500 dark:text-gray-300'> {item.answer}</p>
+              <p className='p-5 pt-3 text-gray-500 dark:text-gray-400'> {item.answer}</p>
             </div>
           </Section.Card>
         ))}

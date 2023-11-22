@@ -141,7 +141,7 @@ export default function FeaturesSection() {
               </div>
               <div>
                 <h5 className='mb-2'>{item.title}</h5>
-                <p>{item.description}</p>
+                <p className='text-slate-500 dark:text-slate-400'>{item.description}</p>
               </div>
             </div>
           </Section.Card>
