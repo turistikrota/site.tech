@@ -1,10 +1,10 @@
 export default function ClientsSection() {
   return (
-    <section className='relative bg-gradient-to-r from-gray-100/70 to-gray-100 py-16 xl:py-24'>
+    <section className='relative py-16 xl:py-24'>
       <div className='absolute inset-x-0 top-0 hidden sm:block'>
         <img src='/prompt_tr/assets/white-wave-b5c33892.svg' alt='svg' className='w-full -scale-x-100' />
       </div>
-      <div className='py-5'>
+      <div className='mx-auto max-w-7xl py-5'>
         <div className='aos-init aos-animate container' data-aos='fade-up' data-aos-duration='300'>
           <div className='text-center'>
             <span className='rounded-full bg-primary/10 px-3 py-1 text-sm font-medium text-primary'>Clients</span>

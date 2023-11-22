@@ -1,6 +1,6 @@
 export default function CountSection() {
   return (
-    <section className='py-20'>
+    <section className='mx-auto max-w-7xl py-20'>
       <div className='container'>
         <div className='text-center'>
           <span className='rounded-full bg-primary/10 px-3 py-1 text-sm font-medium text-primary'>About</span>
