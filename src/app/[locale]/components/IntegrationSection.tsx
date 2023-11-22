@@ -1,68 +1,57 @@
+import { useTranslations } from 'next-intl'
 import Section from './Section'
 
 type Item = {
   title: string
   description: string
   icon: string
-  iconColor: string
 }
 
 const Items: Item[] = [
   {
-    title: 'Discord',
-    description:
-      'Discord is a platform for team communication: everything in one place, instantly searchable, available wherever you go',
-    icon: 'bxl-discord-alt',
-    iconColor: 'text-[#7289da]',
+    title: 'data.cloud.title',
+    description: 'data.cloud.description',
+    icon: 'bxs-cloud text-fuchsia-500',
   },
   {
-    title: 'Discord',
-    description:
-      'Discord is a platform for team communication: everything in one place, instantly searchable, available wherever you go',
-    icon: 'bxl-discord-alt',
-    iconColor: 'text-[#7289da]',
+    title: 'data.group.title',
+    description: 'data.group.description',
+    icon: 'bx-group text-teal-500',
   },
   {
-    title: 'Discord',
-    description:
-      'Discord is a platform for team communication: everything in one place, instantly searchable, available wherever you go',
-    icon: 'bxl-discord-alt',
-    iconColor: 'text-[#7289da]',
+    title: 'data.backup.title',
+    description: 'data.backup.description',
+    icon: 'bxs-save text-rose-500',
   },
   {
-    title: 'Discord',
-    description:
-      'Discord is a platform for team communication: everything in one place, instantly searchable, available wherever you go',
-    icon: 'bxl-discord-alt',
-    iconColor: 'text-[#7289da]',
+    title: 'data.performance.title',
+    description: 'data.performance.description',
+    icon: 'bx-tachometer text-secondary',
   },
   {
-    title: 'Discord',
-    description:
-      'Discord is a platform for team communication: everything in one place, instantly searchable, available wherever you go',
-    icon: 'bxl-discord-alt',
-    iconColor: 'text-[#7289da]',
+    title: 'data.scale.title',
+    description: 'data.scale.description',
+    icon: 'bx-cube-alt text-primary',
   },
   {
-    title: 'Discord',
-    description:
-      'Discord is a platform for team communication: everything in one place, instantly searchable, available wherever you go',
-    icon: 'bxl-discord-alt',
-    iconColor: 'text-[#7289da]',
+    title: 'data.api.title',
+    description: 'data.api.description',
+    icon: 'bx-data text-indigo-500',
   },
 ]
 
 export default function IntegrationSection() {
+  const t = useTranslations('home.integration')
   return (
     <Section>
-      <Section.Head title='Sync your data anywhere' subtitle='Sync your campaigns or other marketing data anywhere' />
+      <Section.Head title={t('title')} subtitle={t('subtitle')} />
       <div className='mt-16 grid grid-cols-1 gap-4 xl:grid-cols-2'>
         {Items.map((item, idx) => (
           <Section.Card key={idx} className='flex items-center gap-6'>
-            <i className={`bx w-16 text-7xl ${item.icon} ${item.iconColor}`} />
+            <i className={`bx w-16 text-7xl ${item.icon}`} />
             <div>
-              <h5>{item.title}</h5>
-              <p className='text-slate-500 dark:text-slate-400'>{item.description}</p>
+              <h5>{t(item.title)}</h5>
+              <p className='text-slate-500 dark:text-slate-400'>{t(item.description)}</p>
             </div>
           </Section.Card>
         ))}

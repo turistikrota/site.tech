@@ -100,7 +100,37 @@
           "title": "Sürekli Teknik Destek",
           "description": "Uygulamalarınızın kesintisiz çalışması için sürekli teknik destek sağlıyoruz."
         }
-      } 
+      }
+    },
+    "integration": {
+      "title": "Verilerinizi Her Yerde Senkronize Edin",
+      "subtitle": "Pazarlama kampanyalarınızı veya diğer önemli verilerinizi her yerde senkronize edin.",
+      "data": {
+        "cloud": {
+          "title": "Güvenli Bulut Depolama",
+          "description": "Verilerinizi güvenli ve erişilebilir tutan bulut depolama çözümleri sunuyoruz."
+        },
+        "group": {
+          "title": "Gerçek Zamanlı İşbirliği",
+          "description": "Ekiplerinizin verimli bir şekilde işbirliği yapabilmesi için gerçek zamanlı çözümler geliştiriyoruz."
+        },
+        "backup": {
+          "title": "Otomatik Yedekleme",
+          "description": "Veri kaybını önlemek için otomatik yedekleme servisleri sağlıyoruz."
+        },
+        "performance": {
+          "title": "Performans İzleme",
+          "description": "Uygulamalarınızın performansını sürekli izleyerek optimizasyon önerileri sunuyoruz."
+        },
+        "scale": {
+          "title": "Ölçeklenebilir Altyapı",
+          "description": "İş yükünüz arttıkça ölçeklenebilen altyapı çözümleri ile yanınızdayız."
+        },
+        "api": {
+          "title": "API Entegrasyonları",
+          "description": "İş akışınızı kolaylaştırmak için gerekli API entegrasyonlarını sağlıyoruz."
+        }
+      }
     }
   }
 }

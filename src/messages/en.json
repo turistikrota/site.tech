@@ -101,5 +101,35 @@
         "description": "We provide continuous technical support to ensure your applications run without interruption."
       }
     }
+  },
+  "integration": {
+    "title": "Sync Your Data Everywhere",
+    "subtitle": "Sync your marketing campaigns or other critical data across all platforms.",
+    "data": {
+      "cloud": {
+        "title": "Secure Cloud Storage",
+        "description": "Offering cloud storage solutions that keep your data secure and accessible."
+      },
+      "group": {
+        "title": "Real-Time Collaboration",
+        "description": "Developing real-time solutions that enable your teams to collaborate efficiently."
+      },
+      "backup": {
+        "title": "Automated Backups",
+        "description": "Providing automated backup services to prevent data loss."
+      },
+      "performance": {
+        "title": "Performance Monitoring",
+        "description": "Continuously monitoring your applications' performance to provide optimization insights."
+      },
+      "scale": {
+        "title": "Scalable Infrastructure",
+        "description": "Supporting your growing business needs with scalable infrastructure solutions."
+      },
+      "api": {
+        "title": "API Integrations",
+        "description": "Facilitating your workflow with essential API integrations."
+      }
+    }
   }
 }
