@@ -28,7 +28,8 @@
       "login": "Login",
       "selectAccount": "Select Profile",
       "places": "Places",
-      "businesses": "Business Panel"
+      "businesses": "Business Panel",
+      "home": "Back to Turistikrota"
     },
     "button": {
       "login": "Login",
