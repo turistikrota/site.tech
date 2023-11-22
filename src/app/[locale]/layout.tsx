@@ -5,7 +5,6 @@ import 'boxicons/css/boxicons.min.css'
 import type { Metadata } from 'next'
 import { NextIntlClientProvider } from 'next-intl'
 import { getTranslations } from 'next-intl/server'
-import { Arimo } from 'next/font/google'
 import '../globals.css'
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -14,7 +13,7 @@ export async function generateMetadata(): Promise<Metadata> {
     title: t('meta.title'),
     description: t('meta.description'),
     keywords: t('meta.keywords'),
-    applicationName: 'Turistikrota',
+    applicationName: 'TuristikrotaTech',
     generator: 'Turistikrota',
     referrer: 'origin-when-cross-origin',
     icons: [
@@ -26,10 +25,10 @@ export async function generateMetadata(): Promise<Metadata> {
     authors: [
       {
         name: 'Turistikrota',
-        url: 'https://turistikrota.com',
+        url: 'https://tech.turistikrota.com',
       },
     ],
-    metadataBase: new URL('https://turistikrota.com'),
+    metadataBase: new URL('https://tech.turistikrota.com'),
     alternates: {
       languages: {
         en: '/en',
@@ -50,7 +49,7 @@ export async function generateMetadata(): Promise<Metadata> {
       title: t('meta.title'),
       description: t('meta.description'),
       type: 'website',
-      url: 'https://turistikrota.com',
+      url: 'https://tech.turistikrota.com',
       images: [
         {
           url: 'https://s3.turistikrota.com/logo/vertical_500x500.png',
@@ -72,16 +71,11 @@ export async function generateMetadata(): Promise<Metadata> {
     viewport: 'width=device-width, initial-scale=1.0',
   }
 }
-const arimo = Arimo({
-  subsets: ['latin-ext'],
-  display: 'swap',
-  preload: true,
-})
 
 export default async function RootLayout({ children, params: { locale } }: React.PropsWithChildren<LayoutProps>) {
   const messages = (await import(`@/messages/${locale}.json`)).default
   return (
-    <html lang={locale} className={arimo.className}>
+    <html lang={locale}>
       <body>
         <NextIntlClientProvider locale={locale} messages={messages}>
           {children}
