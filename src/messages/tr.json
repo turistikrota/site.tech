@@ -131,6 +131,28 @@
           "description": "İş akışınızı kolaylaştırmak için gerekli API entegrasyonlarını sağlıyoruz."
         }
       }
+    },
+    "features": {
+      "title": "Neden Bizi Tercih Etmelisiniz?",
+      "subtitle": "Sizi rahat ettirecek faydalar sunuyoruz.",
+      "data": {
+        "custom": {
+          "title": "Kişiye Özel Çözümler",
+          "description": "Her müşterinin benzersiz ihtiyaçlarını anlayıp, özel çözümler sunuyoruz."
+        },
+        "modern": {
+          "title": "Modern Teknolojiler",
+          "description": "En güncel ve etkili teknolojileri kullanarak işletmenizi dijital dünyada öne çıkarıyoruz."
+        },
+        "effective": {
+          "title": "Etkili İletişim",
+          "description": "Projelerinizde sürekli ve şeffaf iletişim sağlayarak beklentilerinizi tam olarak karşılıyoruz."
+        },
+        "delivery": {
+          "title": "Zamanında Teslimat",
+          "description": "Belirlenen süre içerisinde yüksek kaliteli sonuçlar teslim ediyoruz."
+        }
+      }
     }
   }
 }

@@ -131,5 +131,27 @@
         "description": "Facilitating your workflow with essential API integrations."
       }
     }
+  },
+  "features": {
+    "title": "Why Choose Us?",
+    "subtitle": "We provide the benefits that bring you comfort",
+    "data": {
+      "custom": {
+        "title": "Tailored Solutions",
+        "description": "We understand each customer's unique needs and provide personalized solutions."
+      },
+      "modern": {
+        "title": "Cutting-Edge Technologies",
+        "description": "Leveraging the latest and most effective technologies to advance your business in the digital realm."
+      },
+      "effective": {
+        "title": "Effective Communication",
+        "description": "Ensuring continuous and transparent communication to meet your expectations precisely."
+      },
+      "delivery": {
+        "title": "On-Time Delivery",
+        "description": "Delivering high-quality results within the set timeframe."
+      }
+    }
   }
 }
