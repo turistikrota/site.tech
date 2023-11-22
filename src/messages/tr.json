@@ -71,6 +71,36 @@
           "description": "Uygulamalarınızın sorunsuz çalışmasını sağlamak için 7/24 teknik destek ve düzenli bakım hizmetleri veriyoruz."
         }
       }
+    },
+    "services": {
+      "title": "Hizmetlerimiz",
+      "subtitle": "Teknoloji ve yenilikçi yaklaşımlarımızla işletmenizin dijital dönüşümüne katkıda bulunuyoruz.",
+      "data": {
+        "web": {
+          "title": "Web Uygulamaları Geliştirme",
+          "description": "İşletmeniz için modern, hızlı ve responsive web uygulamaları geliştiriyoruz."
+        },
+        "mobile": {
+          "title": "Mobil Uygulama Geliştirme",
+          "description": "Kullanıcı dostu arayüzlerle donatılmış, performansı yüksek mobil uygulamalar tasarlıyoruz."
+        },
+        "accessibility": {
+          "title": "Erişilebilirlik ve Kullanılabilirlik",
+          "description": "Tüm kullanıcılar için erişilebilir ve kullanışlı dijital ürünler sunuyoruz."
+        },
+        "seo": {
+          "title": "SEO Optimizasyonu",
+          "description": "Arama motorlarında daha görünür olmanızı sağlamak için SEO stratejileri geliştiriyoruz."
+        },
+        "server": {
+          "title": "Bulut ve Sunucu Yönetimi",
+          "description": "Güvenilir ve ölçeklenebilir bulut tabanlı çözümler ile işletmenizin büyümesine destek oluyoruz."
+        },
+        "support": {
+          "title": "Sürekli Teknik Destek",
+          "description": "Uygulamalarınızın kesintisiz çalışması için sürekli teknik destek sağlıyoruz."
+        }
+      } 
     }
   }
 }

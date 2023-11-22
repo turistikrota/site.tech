@@ -1,3 +1,4 @@
+import { useTranslations } from 'next-intl'
 import Section from './Section'
 
 type Item = {
@@ -8,44 +9,42 @@ type Item = {
 
 const Items: Item[] = [
   {
-    title: 'Drive More Sales',
-    description: `If the distribution of letters and 'words' is random, the reader will not be distracted from making.`,
-    icon: 'bx-heart',
+    title: 'data.web.title',
+    description: `data.web.description`,
+    icon: 'bx-world text-primary',
   },
   {
-    title: 'Drive More Sales',
-    description: `If the distribution of letters and 'words' is random, the reader will not be distracted from making.`,
-    icon: 'bx-heart',
+    title: 'data.mobile.title',
+    description: `data.mobile.description`,
+    icon: 'bxs-phone text-teal-500',
   },
   {
-    title: 'Drive More Sales',
-    description: `If the distribution of letters and 'words' is random, the reader will not be distracted from making.`,
-    icon: 'bx-heart',
+    title: 'data.accessibility.title',
+    description: `data.accessibility.description`,
+    icon: 'bx-accessibility text-rose-500',
   },
   {
-    title: 'Drive More Sales',
-    description: `If the distribution of letters and 'words' is random, the reader will not be distracted from making.`,
-    icon: 'bx-heart',
+    title: 'data.seo.title',
+    description: `data.seo.description`,
+    icon: 'bx-search-alt text-fuchsia-500',
   },
   {
-    title: 'Drive More Sales',
-    description: `If the distribution of letters and 'words' is random, the reader will not be distracted from making.`,
-    icon: 'bx-heart',
+    title: 'data.server.title',
+    description: `data.server.description`,
+    icon: 'bxs-cloud text-primary',
   },
   {
-    title: 'Drive More Sales',
-    description: `If the distribution of letters and 'words' is random, the reader will not be distracted from making.`,
-    icon: 'bx-heart',
+    title: 'data.support.title',
+    description: `data.support.description`,
+    icon: 'bxs-help-circle text-teal-500',
   },
 ]
 
 export default function OurServicesSection() {
+  const t = useTranslations('home.services')
   return (
     <Section>
-      <Section.Head
-        title='Our Services'
-        subtitle='This is just a simple text made for this unique and awesome template, you can replace it with any text.'
-      />
+      <Section.Head title={t('title')} subtitle={t('subtitle')} />
       <div className='mt-16 grid grid-cols-1 gap-[30px] md:grid-cols-2 lg:grid-cols-3'>
         {Items.map((item, idx) => (
           <div
@@ -67,17 +66,13 @@ export default function OurServicesSection() {
               >
                 <path d='M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z'></path>
               </svg>
-              <div className='absolute end-0 start-0 top-2/4 mx-auto flex -translate-y-2/4 items-center justify-center rounded-xl align-middle text-3xl text-violet-600 transition duration-500 ease-in-out'>
+              <div className='absolute end-0 start-0 top-2/4 mx-auto flex -translate-y-2/4 items-center justify-center rounded-xl align-middle text-3xl transition duration-500 ease-in-out'>
                 <i className={`bx ${item.icon}`}></i>
               </div>
             </div>
             <div className='mt-6'>
-              <a className='h5 text-lg transition duration-500 ease-in-out hover:text-violet-600' href='/services'>
-                {item.title}
-              </a>
-              <p className='mt-3 text-slate-500 transition duration-500 ease-in-out dark:text-slate-400'>
-                {item.description}
-              </p>
+              <h4 className='text-lg font-medium'>{t(item.title)}</h4>
+              <p className='mt-3 text-slate-500 dark:text-slate-400'>{t(item.description)}</p>
             </div>
           </div>
         ))}

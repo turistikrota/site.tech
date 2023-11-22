@@ -71,5 +71,35 @@
         "description": "We offer 24/7 technical support and regular maintenance services to ensure your applications run smoothly."
       }
     }
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "We contribute to the digital transformation of your business with our technology and innovative approaches.",
+    "data": {
+      "web": {
+        "title": "Web Application Development",
+        "description": "We develop modern, fast, and responsive web applications for your business"
+      },
+      "mobile": {
+        "title": "Mobile Application Development",
+        "description": "We design high-performance mobile applications equipped with user-friendly interfaces."
+      },
+      "accessibility": {
+        "title": "Accessibility and Usability",
+        "description": "We offer digital products that are accessible and convenient for all users."
+      },
+      "seo": {
+        "title": "SEO Optimization",
+        "description": "We develop SEO strategies to improve your visibility in search engines."
+      },
+      "server": {
+        "title": "Cloud and Server Management",
+        "description": "Supporting your business growth with reliable and scalable cloud-based solutions."
+      },
+      "support": {
+        "title": "Continuous Technical Support",
+        "description": "We provide continuous technical support to ensure your applications run without interruption."
+      }
+    }
   }
 }
