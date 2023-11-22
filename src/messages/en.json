@@ -42,120 +42,142 @@
       "title": "Delivering Exceptional User Experiences at Every Scale",
       "subtitle": "We are a team developing interactive and accessible digital solutions for all sectors, ready to innovate for you.",
       "contact": "Contact Us"
-    }
-  },
-  "count": {
-    "title": "More Engagement, Less Cost",
-    "subtitle": "From small startups to large enterprises, we offer technology solutions that fit everyone.",
-    "data": {
-      "success": "Successful Projects",
-      "satisfied": "Satisfied Clients",
-      "innovative": "Innovative Solutions",
-      "support": "Support Service"
-    }
-  },
-  "wwd": {
-    "title": "What We Do?",
-    "subtitle": "We assist businesses in developing their web and mobile applications.",
-    "data": {
-      "experience": {
-        "title": "User Experience Design",
-        "description": "We follow the best practices to create products that offer meaningful and relevant experiences to users."
-      },
-      "custom": {
-        "title": "Custom Software Development",
-        "description": "We provide scalable and secure software solutions tailored to the unique needs of your business."
-      },
-      "maintain": {
-        "title": "Continuous Support and Maintenance",
-        "description": "We offer 24/7 technical support and regular maintenance services to ensure your applications run smoothly."
+    },
+    "count": {
+      "title": "More Engagement, Less Cost",
+      "subtitle": "From small startups to large enterprises, we offer technology solutions that fit everyone.",
+      "data": {
+        "success": "Successful Projects",
+        "satisfied": "Satisfied Clients",
+        "innovative": "Innovative Solutions",
+        "support": "Support Service"
+      }
+    },
+    "wwd": {
+      "title": "What We Do?",
+      "subtitle": "We assist businesses in developing their web and mobile applications.",
+      "data": {
+        "experience": {
+          "title": "User Experience Design",
+          "description": "We follow the best practices to create products that offer meaningful and relevant experiences to users."
+        },
+        "custom": {
+          "title": "Custom Software Development",
+          "description": "We provide scalable and secure software solutions tailored to the unique needs of your business."
+        },
+        "maintain": {
+          "title": "Continuous Support and Maintenance",
+          "description": "We offer 24/7 technical support and regular maintenance services to ensure your applications run smoothly."
+        }
+      }
+    },
+    "services": {
+      "title": "Our Services",
+      "subtitle": "We contribute to the digital transformation of your business with our technology and innovative approaches.",
+      "data": {
+        "web": {
+          "title": "Web Application Development",
+          "description": "We develop modern, fast, and responsive web applications for your business"
+        },
+        "mobile": {
+          "title": "Mobile Application Development",
+          "description": "We design high-performance mobile applications equipped with user-friendly interfaces."
+        },
+        "accessibility": {
+          "title": "Accessibility and Usability",
+          "description": "We offer digital products that are accessible and convenient for all users."
+        },
+        "seo": {
+          "title": "SEO Optimization",
+          "description": "We develop SEO strategies to improve your visibility in search engines."
+        },
+        "server": {
+          "title": "Cloud and Server Management",
+          "description": "Supporting your business growth with reliable and scalable cloud-based solutions."
+        },
+        "support": {
+          "title": "Continuous Technical Support",
+          "description": "We provide continuous technical support to ensure your applications run without interruption."
+        }
+      }
+    },
+    "integration": {
+      "title": "Sync Your Data Everywhere",
+      "subtitle": "Sync your marketing campaigns or other critical data across all platforms.",
+      "data": {
+        "cloud": {
+          "title": "Secure Cloud Storage",
+          "description": "Offering cloud storage solutions that keep your data secure and accessible."
+        },
+        "group": {
+          "title": "Real-Time Collaboration",
+          "description": "Developing real-time solutions that enable your teams to collaborate efficiently."
+        },
+        "backup": {
+          "title": "Automated Backups",
+          "description": "Providing automated backup services to prevent data loss."
+        },
+        "performance": {
+          "title": "Performance Monitoring",
+          "description": "Continuously monitoring your applications' performance to provide optimization insights."
+        },
+        "scale": {
+          "title": "Scalable Infrastructure",
+          "description": "Supporting your growing business needs with scalable infrastructure solutions."
+        },
+        "api": {
+          "title": "API Integrations",
+          "description": "Facilitating your workflow with essential API integrations."
+        }
+      }
+    },
+    "features": {
+      "title": "Why Choose Us?",
+      "subtitle": "We provide the benefits that bring you comfort",
+      "data": {
+        "custom": {
+          "title": "Tailored Solutions",
+          "description": "We understand each customer's unique needs and provide personalized solutions."
+        },
+        "modern": {
+          "title": "Cutting-Edge Technologies",
+          "description": "Leveraging the latest and most effective technologies to advance your business in the digital realm."
+        },
+        "effective": {
+          "title": "Effective Communication",
+          "description": "Ensuring continuous and transparent communication to meet your expectations precisely."
+        },
+        "delivery": {
+          "title": "On-Time Delivery",
+          "description": "Delivering high-quality results within the set timeframe."
+        }
+      }
+    },
+    "blog": {
+      "title": "Blog",
+      "subtitle": "Latest Articles from Our Tech Team"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "The most common queries from our customers answered",
+      "data": {
+        "one": {
+          "question": "How long will the app development take?",
+          "answer": "Depending on the complexity and features of the application, the timeline can vary. We can provide a more precise schedule after our initial assessment."
+        },
+        "two": {
+          "question": "Which technology do you use for my mobile app?",
+          "answer": "We use various technologies depending on our customers' needs, but our applications developed with React Native offer efficient performance on both Android and iOS platforms."
+        },
+        "three": {
+          "question": "How do you handle SEO when redesigning my website?",
+          "answer": "When redesigning your website, we adhere to SEO best practices to ensure that your site remains easily discoverable by search engines."
+        },
+        "four": {
+          "question": "What are your technical support packages?",
+          "answer": "We have monthly and yearly maintenance packages available. We offer customized technical support and maintenance services based on your needs."
+        }
       }
     }
-  },
-  "services": {
-    "title": "Our Services",
-    "subtitle": "We contribute to the digital transformation of your business with our technology and innovative approaches.",
-    "data": {
-      "web": {
-        "title": "Web Application Development",
-        "description": "We develop modern, fast, and responsive web applications for your business"
-      },
-      "mobile": {
-        "title": "Mobile Application Development",
-        "description": "We design high-performance mobile applications equipped with user-friendly interfaces."
-      },
-      "accessibility": {
-        "title": "Accessibility and Usability",
-        "description": "We offer digital products that are accessible and convenient for all users."
-      },
-      "seo": {
-        "title": "SEO Optimization",
-        "description": "We develop SEO strategies to improve your visibility in search engines."
-      },
-      "server": {
-        "title": "Cloud and Server Management",
-        "description": "Supporting your business growth with reliable and scalable cloud-based solutions."
-      },
-      "support": {
-        "title": "Continuous Technical Support",
-        "description": "We provide continuous technical support to ensure your applications run without interruption."
-      }
-    }
-  },
-  "integration": {
-    "title": "Sync Your Data Everywhere",
-    "subtitle": "Sync your marketing campaigns or other critical data across all platforms.",
-    "data": {
-      "cloud": {
-        "title": "Secure Cloud Storage",
-        "description": "Offering cloud storage solutions that keep your data secure and accessible."
-      },
-      "group": {
-        "title": "Real-Time Collaboration",
-        "description": "Developing real-time solutions that enable your teams to collaborate efficiently."
-      },
-      "backup": {
-        "title": "Automated Backups",
-        "description": "Providing automated backup services to prevent data loss."
-      },
-      "performance": {
-        "title": "Performance Monitoring",
-        "description": "Continuously monitoring your applications' performance to provide optimization insights."
-      },
-      "scale": {
-        "title": "Scalable Infrastructure",
-        "description": "Supporting your growing business needs with scalable infrastructure solutions."
-      },
-      "api": {
-        "title": "API Integrations",
-        "description": "Facilitating your workflow with essential API integrations."
-      }
-    }
-  },
-  "features": {
-    "title": "Why Choose Us?",
-    "subtitle": "We provide the benefits that bring you comfort",
-    "data": {
-      "custom": {
-        "title": "Tailored Solutions",
-        "description": "We understand each customer's unique needs and provide personalized solutions."
-      },
-      "modern": {
-        "title": "Cutting-Edge Technologies",
-        "description": "Leveraging the latest and most effective technologies to advance your business in the digital realm."
-      },
-      "effective": {
-        "title": "Effective Communication",
-        "description": "Ensuring continuous and transparent communication to meet your expectations precisely."
-      },
-      "delivery": {
-        "title": "On-Time Delivery",
-        "description": "Delivering high-quality results within the set timeframe."
-      }
-    }
-  },
-  "blog": {
-    "title": "Blog",
-    "subtitle": "Latest Articles from Our Tech Team"
   }
 }

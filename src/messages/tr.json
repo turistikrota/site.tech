@@ -157,6 +157,28 @@
     "blog": {
       "title": "Blog",
       "subtitle": "Teknoloji Ekibimizden Güncel Yazılar"
+    },
+    "faq": {
+      "title": "Sıkça Sorulan Sorular",
+      "subtitle": "Müşterilerimizin en sık sorduğu sorular ve yanıtları",
+      "data": {
+        "one": {
+          "question": "Uygulama geliştirmenin süresi ne kadar olacak?",
+          "answer": "Uygulamanın karmaşıklığına ve özelliklerine bağlı olarak, projenin süresi değişkenlik gösterebilir. İlk değerlendirmemizden sonra size daha net bir zaman çizelgesi sunabiliriz."
+        },
+        "two": {
+          "question": "Mobil uygulamam için hangi teknolojiyi kullanıyorsunuz?",
+          "answer": "Müşterilerimizin ihtiyaçlarına bağlı olarak çeşitli teknolojiler kullanıyoruz ancak React Native ile geliştirdiğimiz uygulamalar hem Android hem de iOS platformlarında etkili bir performans sunmaktadır."
+        },
+        "three": {
+          "question": "Web sitemi yeniden tasarlarken SEO'yu nasıl etkiliyorsunuz?",
+          "answer": "Web sitenizi yeniden tasarlarken, SEO en iyi uygulamalarını göz önünde bulunduruyor ve sitenizin arama motorları tarafından kolayca bulunabilir olmasını sağlıyoruz."
+        },
+        "four": {
+          "question": "Teknik destek paketleriniz nelerdir?",
+          "answer": "Aylık ve yıllık bakım paketlerimiz mevcuttur. İhtiyaçlarınıza göre özelleştirilmiş teknik destek ve bakım hizmetleri sunuyoruz."
+        }
+      }
     }
   }
 }

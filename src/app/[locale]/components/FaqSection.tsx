@@ -1,33 +1,12 @@
 'use client'
 
+import { useTranslations } from 'next-intl'
 import { useState } from 'react'
 import Section from './Section'
 
-type Item = {
-  question: string
-  answer: string
-}
-
-const Items: Item[] = [
-  {
-    question: 'Can I use this template for my client?',
-    answer: `Yup, the marketplace license allows you to use this theme in any end products. For more information on licenses, please refere license terms on marketplace.`,
-  },
-  {
-    question: 'Can I use this template for my client?',
-    answer: `Yup, the marketplace license allows you to use this theme in any end products. For more information on licenses, please refere license terms on marketplace.`,
-  },
-  {
-    question: 'Can I use this template for my client?',
-    answer: `Yup, the marketplace license allows you to use this theme in any end products. For more information on licenses, please refere license terms on marketplace.`,
-  },
-  {
-    question: 'Can I use this template for my client?',
-    answer: `Yup, the marketplace license allows you to use this theme in any end products. For more information on licenses, please refere license terms on marketplace.`,
-  },
-]
-
 export default function FaqSection() {
+  const t = useTranslations('home.faq')
+
   const [active, setActive] = useState<number | null>(null)
 
   const toggle = (idx: number) => {
@@ -40,18 +19,15 @@ export default function FaqSection() {
 
   return (
     <Section>
-      <Section.Head
-        title='Frequently Asked Questions'
-        subtitle='Here are some of the basic types of questions for our customers'
-      />
+      <Section.Head title={t('title')} subtitle={t('subtitle')} />
       <div data-fc-type='accordion' className='mt-16 flex flex-col gap-y-4 lg:mx-auto lg:w-3/4 2xl:w-2/3'>
-        {Items.map((item, idx) => (
+        {['one', 'two', 'three', 'four'].map((item, idx) => (
           <Section.Card key={idx} className='p-0'>
             <button
-              className='open fc-col-open inline-flex w-full items-center justify-between p-5 text-left font-semibold transition'
+              className='open fc-col-open inline-flex w-full items-center justify-between p-4 text-left font-semibold transition'
               onClick={() => toggle(idx)}
             >
-              {item.question}
+              {t(`data.${item}.question`)}
               <span className='material-symbols-rounded fc-collapse-open:rotate-180 block text-xl transition-all'>
                 <i className='bx bx-chevron-down'></i>
               </span>
@@ -61,7 +37,7 @@ export default function FaqSection() {
                 active === idx ? 'animate-fade-in' : 'hidden animate-fade-out'
               }`}
             >
-              <p className='p-5 pt-3 text-gray-500 dark:text-gray-400'> {item.answer}</p>
+              <p className='p-4 pt-1 text-gray-500 dark:text-gray-400'>{t(`data.${item}.answer`)}</p>
             </div>
           </Section.Card>
         ))}
