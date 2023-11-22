@@ -1,6 +1,34 @@
+type Item = {
+  title: string
+  firstPrice: string
+  yearlyPrice: string
+  features: string[]
+}
+
+const Items: Item[] = [
+  {
+    title: 'Starter',
+    firstPrice: '500',
+    yearlyPrice: '250',
+    features: [],
+  },
+  {
+    title: 'Professional',
+    firstPrice: '1500',
+    yearlyPrice: '1000',
+    features: [],
+  },
+  {
+    title: 'Enterprise',
+    firstPrice: '2500',
+    yearlyPrice: '250',
+    features: [],
+  },
+]
+
 export default function PricingSection() {
   return (
-    <section className='py-16 sm:py-24'>
+    <section className='mx-auto max-w-7xl py-16 sm:py-24'>
       <div className='container relative'>
         <div className='text-center'>
           <span className='rounded-full bg-primary/10 px-2 py-1 text-xs text-primary/90'>Plans</span>

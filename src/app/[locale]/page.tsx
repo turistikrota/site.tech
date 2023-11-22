@@ -8,7 +8,6 @@ import HeadSection from './components/HeadSection'
 import HiringSection from './components/HiringSection'
 import IntegrationSection from './components/IntegrationSection'
 import OurServicesSection from './components/OurServicesSection'
-import PricingDetailedSection from './components/PricingDetailedSection'
 import WhatWeDoSection from './components/WhatWeDoSection'
 
 export default function Home() {
@@ -16,7 +15,6 @@ export default function Home() {
     <DefaultLayout>
       <HeadSection />
       <WhatWeDoSection />
-      <PricingDetailedSection />
       <CountSection />
       <ClientsSection />
       <IntegrationSection />
