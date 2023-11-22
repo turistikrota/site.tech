@@ -53,5 +53,23 @@
       "innovative": "Innovative Solutions",
       "support": "Support Service"
     }
+  },
+  "wwd": {
+    "title": "What We Do?",
+    "subtitle": "We assist businesses in developing their web and mobile applications.",
+    "data": {
+      "experience": {
+        "title": "User Experience Design",
+        "description": "We follow the best practices to create products that offer meaningful and relevant experiences to users."
+      },
+      "custom": {
+        "title": "Custom Software Development",
+        "description": "We provide scalable and secure software solutions tailored to the unique needs of your business."
+      },
+      "maintain": {
+        "title": "Continuous Support and Maintenance",
+        "description": "We offer 24/7 technical support and regular maintenance services to ensure your applications run smoothly."
+      }
+    }
   }
 }

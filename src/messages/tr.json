@@ -53,6 +53,24 @@
         "innovative": "Yenilikçi Çözüm",
         "support": "Destek Hizmeti"
       }
+    },
+    "wwd": {
+      "title": "Neler Yapıyoruz?",
+      "subtitle": "İşletmelerin web ve mobil uygulamalarını geliştirmelerine yardımcı oluyoruz.",
+      "data": {
+        "experience": {
+          "title": "Kullanıcı Deneyimi Tasarımı",
+          "description": "Kullanıcılara anlamlı ve alakalı deneyimler sunan ürünler yaratmak için en iyi süreçleri takip ediyoruz."
+        },
+        "custom": {
+          "title": "Özel Yazılım Geliştirme",
+          "description": "İşletmenizin benzersiz ihtiyaçlarına uygun, ölçeklenebilir ve güvenli yazılım çözümleri sunuyoruz."
+        },
+        "maintain": {
+          "title": "Sürekli Destek ve Bakım",
+          "description": "Uygulamalarınızın sorunsuz çalışmasını sağlamak için 7/24 teknik destek ve düzenli bakım hizmetleri veriyoruz."
+        }
+      }
     }
   }
 }
