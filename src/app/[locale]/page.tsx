@@ -15,10 +15,10 @@ export default function Home({ params: { locale } }: LayoutProps) {
       <HeadSection />
       <WhatWeDoSection />
       <CountSection />
+      <OurServicesSection />
       <IntegrationSection />
       <FeaturesSection />
       <BlogSection locale={locale} />
-      <OurServicesSection />
       <FaqSection />
     </DefaultLayout>
   )

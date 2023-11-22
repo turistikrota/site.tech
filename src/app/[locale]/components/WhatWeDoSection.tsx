@@ -1,16 +1,18 @@
-import React from "react"
+import React from 'react'
 
 type Item = {
-    title: string
-    description: string
-    icon: React.ReactNode
+  title: string
+  description: string
+  icon: React.ReactNode
 }
 
-const Items : Item[] = [
-    {
-        title: "User Experience Design",
-        description: "Following the best process that a great design teams use to create products that provide meaningful and relevant experiences to users",
-        icon:  <svg
+const Items: Item[] = [
+  {
+    title: 'User Experience Design',
+    description:
+      'Following the best process that a great design teams use to create products that provide meaningful and relevant experiences to users',
+    icon: (
+      <svg
         className='h-7 w-7 text-primary'
         viewBox='0 0 24 24'
         version='1.1'
@@ -18,7 +20,7 @@ const Items : Item[] = [
         xmlnsXlink='http://www.w3.org/1999/xlink'
       >
         {' '}
-        <g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'>
+        <g stroke='none' strokeWidth='1' fill='none' fillRule='evenodd'>
           {' '}
           <rect id='bound' x='0' y='0' width='24' height='24'></rect>{' '}
           <path
@@ -30,11 +32,14 @@ const Items : Item[] = [
           <circle id='Oval-14' fill='currentcolor' cx='12' cy='9' r='5'></circle>{' '}
         </g>{' '}
       </svg>
-    },
-    {
-        title: "Front End Development",
-        description: "Development of the websites for businesses of all sizes and shapes and covering a small to enterprise organizations",
-        icon:               <svg
+    ),
+  },
+  {
+    title: 'Front End Development',
+    description:
+      'Development of the websites for businesses of all sizes and shapes and covering a small to enterprise organizations',
+    icon: (
+      <svg
         className='h-7 w-7 text-orange-600'
         viewBox='0 0 24 24'
         version='1.1'
@@ -42,7 +47,7 @@ const Items : Item[] = [
         xmlnsXlink='http://www.w3.org/1999/xlink'
       >
         {' '}
-        <g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'>
+        <g stroke='none' strokeWidth='1' fill='none' fillRule='evenodd'>
           {' '}
           <polygon id='Shape' points='0 0 24 0 24 24 0 24'></polygon>{' '}
           <path
@@ -52,11 +57,14 @@ const Items : Item[] = [
           ></path>{' '}
         </g>{' '}
       </svg>
-    },
-    {
-        title: "Brand Identitty Design",
-        description: "Making a new identities for your brand with an effective collaboration and considered design. We treat your brand like our own",
-        icon:  <svg
+    ),
+  },
+  {
+    title: 'Brand Identitty Design',
+    description:
+      'Making a new identities for your brand with an effective collaboration and considered design. We treat your brand like our own',
+    icon: (
+      <svg
         className='h-7 w-7 text-green-500'
         viewBox='0 0 24 24'
         version='1.1'
@@ -64,7 +72,7 @@ const Items : Item[] = [
         xmlnsXlink='http://www.w3.org/1999/xlink'
       >
         {' '}
-        <g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'>
+        <g stroke='none' strokeWidth='1' fill='none' fillRule='evenodd'>
           {' '}
           <rect id='bound' x='0' y='0' width='24' height='24'></rect>{' '}
           <path
@@ -74,12 +82,13 @@ const Items : Item[] = [
           ></path>{' '}
         </g>{' '}
       </svg>
-    }
+    ),
+  },
 ]
 
 export default function WhatWeDoSection() {
   return (
-    <section className='py-20 max-w-7xl mx-auto'>
+    <section className='mx-auto max-w-7xl py-20'>
       <div className='container'>
         <div className='text-center'>
           <h1 className='text-3xl font-medium'>What We Do</h1>
@@ -88,20 +97,13 @@ export default function WhatWeDoSection() {
           </p>
         </div>
         <div className='grid grid-cols-1 gap-4 pt-12 md:grid-cols-2 xl:grid-cols-3'>
-          {Items.map((item, idx) => <div
-            className='aos-init aos-animate rounded-md p-6 transition-all duration-500 backdrop-blur-md bg-white/5 border hover:shadow-xl'
-            data-aos='fade-up'
-            data-aos-duration='500'
-            key={idx}
-          >
-            <div className='flex h-12 w-12 items-center justify-center rounded-md bg-primary/20'>
-              {item.icon}
+          {Items.map((item, idx) => (
+            <div className='animate-fade-in rounded-md bg-white/5 p-4 transition-all duration-200' key={idx}>
+              <div className='flex h-12 w-12 items-center justify-center rounded-md bg-primary/20'>{item.icon}</div>
+              <h4 className='my-5 text-base font-medium'>{item.title}</h4>
+              <p className='text-slate-400'>{item.description}</p>
             </div>
-            <h4 className='my-5 text-base font-medium'>{item.title}</h4>
-            <p className='text-slate-400'>
-              {item.description}
-            </p>
-          </div>)}
+          ))}
         </div>
       </div>
     </section>
