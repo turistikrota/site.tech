@@ -43,5 +43,15 @@
       "subtitle": "We are a team developing interactive and accessible digital solutions for all sectors, ready to innovate for you.",
       "contact": "Contact Us"
     }
+  },
+  "count": {
+    "title": "More Engagement, Less Cost",
+    "subtitle": "From small startups to large enterprises, we offer technology solutions that fit everyone.",
+    "data": {
+      "success": "Successful Projects",
+      "satisfied": "Satisfied Clients",
+      "innovative": "Innovative Solutions",
+      "support": "Support Service"
+    }
   }
 }

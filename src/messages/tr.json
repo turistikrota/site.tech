@@ -43,6 +43,16 @@
       "title": "Her Ölçekte Mükemmel Kullanıcı Deneyimleri Sunuyoruz",
       "subtitle": "Tüm sektörler için etkileşimli ve erişilebilir dijital çözümler geliştiren bir ekibiz, sizin için de yaratıcı çözümlerimiz var.",
       "contact": "Bize Ulaşın"
+    },
+    "count": {
+      "title": "Daha Fazla Etkileşim, Daha Az Maliyet",
+      "subtitle": "Küçük girişimlerden büyük işletmelere, herkes için uygun teknoloji çözümleri sunuyoruz.",
+      "data": {
+        "success": "Başarılı Proje",
+        "satisfied": "Memnun Müşteri",
+        "innovative": "Yenilikçi Çözüm",
+        "support": "Destek Hizmeti"
+      }
     }
   }
 }
