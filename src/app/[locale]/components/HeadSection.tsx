@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function HeadSection() {
   return (
     <section className='relative mx-auto max-w-7xl px-4 py-48 xl:px-0'>
@@ -16,6 +18,14 @@ export default function HeadSection() {
             We're a top-notch web design and development team helping business to craft the meaningful and interactive
             product experiences.
           </p>
+          <div className='flex flex-wrap items-center gap-5'>
+            <Link
+              className='animate-fade-in rounded-md bg-gray-400/5 px-6 py-3 transition-all duration-200 hover:bg-gray-400/10 dark:bg-white/5 dark:hover:bg-white/10'
+              href='mailto:tech@turistikrota.com'
+            >
+              Contact Us
+            </Link>
+          </div>
         </div>
       </div>
     </section>
