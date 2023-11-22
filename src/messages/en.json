@@ -153,5 +153,9 @@
         "description": "Delivering high-quality results within the set timeframe."
       }
     }
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Latest Articles from Our Tech Team"
   }
 }

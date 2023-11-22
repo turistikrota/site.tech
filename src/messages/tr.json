@@ -153,6 +153,10 @@
           "description": "Belirlenen süre içerisinde yüksek kaliteli sonuçlar teslim ediyoruz."
         }
       }
+    },
+    "blog": {
+      "title": "Blog",
+      "subtitle": "Teknoloji Ekibimizden Güncel Yazılar"
     }
   }
 }

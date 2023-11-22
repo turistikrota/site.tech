@@ -1,3 +1,4 @@
+import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import Link from 'next/link'
 import Section from './Section'
@@ -96,6 +97,8 @@ const TagClasses: Record<Tag, string> = {
 }
 
 export default function BlogSection({ locale }: Props) {
+  const t = useTranslations('home.blog')
+
   const mapDateToLocale = (date: string) => {
     const dateObj = new Date(date)
     return dateObj.toLocaleDateString(locale, {
@@ -106,7 +109,7 @@ export default function BlogSection({ locale }: Props) {
   }
   return (
     <Section>
-      <Section.Head title='Blog' subtitle='Interesting Articles' />
+      <Section.Head title={t('title')} subtitle={t('subtitle')} />
       <div className='mt-16 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4'>
         {Blogs.map((blog, idx) => (
           <Section.Card key={idx} className='group'>
