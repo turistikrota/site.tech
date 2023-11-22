@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import Section from './Section'
 
 type Tag = 'Design' | 'Development' | 'Marketing' | 'Branding' | 'UI/UX' | 'Photography' | 'Video' | 'Business'
 
@@ -104,53 +105,48 @@ export default function BlogSection({ locale }: Props) {
     })
   }
   return (
-    <section className='mx-auto max-w-7xl py-20'>
-      <div className='container'>
-        <div className='text-center'>
-          <span className='rounded-full bg-primary/10 px-3 py-1 text-sm font-medium text-primary'>Blog</span>
-          <h1 className='my-3 text-3xl font-medium'>Interesting Articles</h1>
-        </div>
-        <div className='mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4'>
-          {Blogs.map((blog, idx) => (
-            <div className='group rounded-md bg-slate-500/5 dark:bg-white/5'>
-              <div className='relative'>
-                <div className='absolute end-4 top-3'>
-                  <span className={`rounded-md px-3 py-1 text-sm font-medium text-white ${TagClasses[blog.tag]}`}>
-                    {blog.tag}
-                  </span>
-                </div>
-                <Image
-                  src={blog.image}
-                  alt={blog.title}
-                  width={500}
-                  height={300}
-                  className='h-80 min-h-full rounded-t-md object-cover'
-                />
-                <div className='absolute -bottom-5'></div>
+    <Section>
+      <Section.Head title='Blog' subtitle='Interesting Articles' />
+      <div className='mt-16 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4'>
+        {Blogs.map((blog, idx) => (
+          <Section.Card key={idx} className='group'>
+            <div className='relative'>
+              <div className='absolute end-4 top-3'>
+                <span className={`rounded-md px-3 py-1 text-sm font-medium text-white ${TagClasses[blog.tag]}`}>
+                  {blog.tag}
+                </span>
               </div>
-              <div className='p-6'>
-                <p className='text-sm'>{mapDateToLocale(blog.date)}</p>
-                <h4 className='my-2 text-lg font-semibold transition-colors duration-200 group-hover:text-secondary'>
-                  <Link href={blog.link} target='_blank'>
-                    {blog.title}
-                  </Link>
-                </h4>
-                <p className='my-2 text-slate-400'>
-                  {blog.description.slice(0, 100)}
-                  ...&nbsp;
-                  <Link
-                    className='transition-colors duration-200 group-hover:text-secondary'
-                    href={blog.link}
-                    target='_blank'
-                  >
-                    Read More
-                  </Link>
-                </p>
-              </div>
+              <Image
+                src={blog.image}
+                alt={blog.title}
+                width={500}
+                height={300}
+                className='h-80 min-h-full rounded-t-md object-cover'
+              />
+              <div className='absolute -bottom-5'></div>
             </div>
-          ))}
-        </div>
+            <div className='p-6'>
+              <p className='text-sm'>{mapDateToLocale(blog.date)}</p>
+              <h4 className='my-2 text-lg font-semibold transition-colors duration-200 group-hover:text-secondary'>
+                <Link href={blog.link} target='_blank'>
+                  {blog.title}
+                </Link>
+              </h4>
+              <p className='my-2 text-slate-400'>
+                {blog.description.slice(0, 100)}
+                ...&nbsp;
+                <Link
+                  className='transition-colors duration-200 group-hover:text-secondary'
+                  href={blog.link}
+                  target='_blank'
+                >
+                  Read More
+                </Link>
+              </p>
+            </div>
+          </Section.Card>
+        ))}
       </div>
-    </section>
+    </Section>
   )
 }

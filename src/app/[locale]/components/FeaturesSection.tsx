@@ -1,4 +1,5 @@
 import React from 'react'
+import Section from './Section'
 
 type Item = {
   title: string
@@ -129,29 +130,23 @@ const Items: Item[] = [
 
 export default function FeaturesSection() {
   return (
-    <section className='relative mx-auto max-w-7xl py-20'>
-      <div className='container relative'>
-        <div className='text-center'>
-          <span className='rounded-full bg-primary/10 px-3 py-1 text-sm font-medium text-primary'>Features</span>
-          <h2 className='my-5 text-xl font-semibold md:text-3xl'>Why Choose Us</h2>
-          <p className='text-slate-500'>The benefits that will make you comfort</p>
-        </div>
-        <div className='mt-16 grid grid-cols-1 gap-4 lg:grid-cols-2'>
-          {Items.map((item, idx) => (
-            <div key={idx} className='rounded-md bg-slate-500/5 p-4 dark:bg-white/5'>
-              <div className='flex gap-5'>
-                <div className='flex h-12 w-12 items-center justify-center gap-5 rounded-md bg-primary/10'>
-                  {item.icon}
-                </div>
-                <div>
-                  <h5 className='mb-2'>{item.title}</h5>
-                  <p>{item.description}</p>
-                </div>
+    <Section>
+      <Section.Head title='Why Choose Us' subtitle='The benefits that will make you comfort' />
+      <div className='mt-16 grid grid-cols-1 gap-4 lg:grid-cols-2'>
+        {Items.map((item, idx) => (
+          <Section.Card key={idx}>
+            <div className='flex gap-5'>
+              <div className='flex h-12 w-12 items-center justify-center gap-5 rounded-md bg-primary/10'>
+                {item.icon}
+              </div>
+              <div>
+                <h5 className='mb-2'>{item.title}</h5>
+                <p>{item.description}</p>
               </div>
             </div>
-          ))}
-        </div>
+          </Section.Card>
+        ))}
       </div>
-    </section>
+    </Section>
   )
 }
