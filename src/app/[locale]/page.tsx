@@ -1,3 +1,4 @@
+import { LayoutProps } from '@/types/base'
 import DefaultLayout from '../layouts/default'
 import BlogSection from './components/BlogSection'
 import CountSection from './components/CountSection'
@@ -8,7 +9,7 @@ import IntegrationSection from './components/IntegrationSection'
 import OurServicesSection from './components/OurServicesSection'
 import WhatWeDoSection from './components/WhatWeDoSection'
 
-export default function Home() {
+export default function Home({ params: { locale } }: LayoutProps) {
   return (
     <DefaultLayout>
       <HeadSection />
@@ -16,7 +17,7 @@ export default function Home() {
       <CountSection />
       <IntegrationSection />
       <FeaturesSection />
-      <BlogSection />
+      <BlogSection locale={locale} />
       <OurServicesSection />
       <FaqSection />
     </DefaultLayout>
