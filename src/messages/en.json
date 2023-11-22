@@ -36,5 +36,12 @@
       "profile": "profile",
       "loading": "Loading..."
     }
+  },
+  "home": {
+    "head": {
+      "title": "Delivering Exceptional User Experiences at Every Scale",
+      "subtitle": "We are a team developing interactive and accessible digital solutions for all sectors, ready to innovate for you.",
+      "contact": "Contact Us"
+    }
   }
 }

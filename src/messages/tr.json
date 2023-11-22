@@ -37,5 +37,12 @@
       "profile": "Profil",
       "loading": "Yükleniyor..."
     }
+  },
+  "home": {
+    "head": {
+      "title": "Her Ölçekte Mükemmel Kullanıcı Deneyimleri Sunuyoruz",
+      "subtitle": "Tüm sektörler için etkileşimli ve erişilebilir dijital çözümler geliştiren bir ekibiz, sizin için de yaratıcı çözümlerimiz var.",
+      "contact": "Bize Ulaşın"
+    }
   }
 }
