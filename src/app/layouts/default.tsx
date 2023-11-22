@@ -8,7 +8,7 @@ type Props = {
   fullHeight?: boolean
 }
 
-export function Layout({ children, fullHeight = false, withoutFooter = false }: Props) {
+export function Layout({ children, withoutFooter = false }: Props) {
   return (
     <>
       <DefaultHeader></DefaultHeader>
