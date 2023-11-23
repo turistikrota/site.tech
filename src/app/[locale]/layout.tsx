@@ -8,6 +8,7 @@ import 'boxicons/css/boxicons.min.css'
 import type { Metadata } from 'next'
 import { NextIntlClientProvider } from 'next-intl'
 import { getTranslations } from 'next-intl/server'
+import { notFound } from 'next/navigation'
 import '../globals.css'
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -75,7 +76,10 @@ export async function generateMetadata(): Promise<Metadata> {
   }
 }
 
+const locales = ['en', 'tr']
+
 export default async function RootLayout({ children, params: { locale } }: React.PropsWithChildren<LayoutProps>) {
+  if (!locales.includes(locale as any)) return notFound()
   const messages = (await import(`@/messages/${locale}.json`)).default
   return (
     <html lang={locale}>
