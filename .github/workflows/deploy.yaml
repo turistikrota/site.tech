@@ -41,4 +41,5 @@ jobs:
           script: |
             docker service ls | grep -q site-tech && docker service rm site-tech || true
             cd $DIR
+            docker pull turistikrota/site.tech:$IMAGE_TAG
             docker service create --name site-tech --env-file .env --hostname 0.0.0.0 --publish $APP_PORT:$APP_PORT turistikrota/site.tech:$IMAGE_TAG 
