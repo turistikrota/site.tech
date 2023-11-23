@@ -88,7 +88,7 @@ const Blogs: Blog[] = [
 
 const TagClasses: Record<Tag, string> = {
   Design: 'bg-black',
-  Development: 'bg-secondary',
+  Development: 'dark:bg-primary-800 dark:text-primary-50 bg-primary-100 text-primary-800',
   Marketing: 'bg-orange',
   Branding: 'bg-green',
   'UI/UX': 'bg-blue',
@@ -116,9 +116,7 @@ export default function BlogSection({ locale }: Props) {
           <Card key={idx} className='group'>
             <div className='relative'>
               <div className='absolute end-4 top-3'>
-                <span className={`rounded-md px-3 py-1 text-sm font-medium text-white ${TagClasses[blog.tag]}`}>
-                  {blog.tag}
-                </span>
+                <span className={`rounded-md px-3 py-1 text-sm font-medium ${TagClasses[blog.tag]}`}>{blog.tag}</span>
               </div>
               <Image
                 src={blog.image}
