@@ -83,6 +83,9 @@ export default async function RootLayout({ children, params: { locale } }: React
   const messages = (await import(`@/messages/${locale}.json`)).default
   return (
     <html lang={locale}>
+      <head>
+        <link rel='sitemap' type='application/xml' href='/sitemap.xml' />
+      </head>
       <body>
         <NextIntlClientProvider locale={locale} messages={messages}>
           {children}
