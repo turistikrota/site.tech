@@ -12,22 +12,22 @@ const Items: Item[] = [
   {
     title: 'data.custom.title',
     description: `data.custom.description`,
-    icon: <i className='bx bx-customize text-3xl text-teal-500'></i>,
+    icon: <i className='bx bx-customize w-12 text-center text-3xl text-teal-500'></i>,
   },
   {
     title: 'data.modern.title',
     description: `data.modern.description`,
-    icon: <i className='bx bx-rocket text-3xl text-secondary'></i>,
+    icon: <i className='bx bx-rocket w-12 text-center text-3xl text-secondary'></i>,
   },
   {
     title: 'data.effective.title',
     description: `data.effective.description`,
-    icon: <i className='bx bxs-megaphone text-3xl text-primary'></i>,
+    icon: <i className='bx bxs-megaphone w-12 text-center text-3xl text-primary'></i>,
   },
   {
     title: 'data.delivery.title',
     description: `data.delivery.description`,
-    icon: <i className='bx bxs-time text-3xl text-fuchsia-500'></i>,
+    icon: <i className='bx bxs-time w-12 text-center text-3xl text-fuchsia-500'></i>,
   },
 ]
 
@@ -40,9 +40,7 @@ export default function FeaturesSection() {
         {Items.map((item, idx) => (
           <Section.Card key={idx}>
             <div className='flex gap-5'>
-              <div className='flex h-12 w-12 items-center justify-center gap-5 rounded-md bg-primary/10'>
-                {item.icon}
-              </div>
+              <div className='flex h-12 w-12 items-center justify-center rounded-md bg-primary/10'>{item.icon}</div>
               <div>
                 <h5 className='mb-2'>{t(item.title)}</h5>
                 <p className='text-slate-500 dark:text-slate-400'>{t(item.description)}</p>

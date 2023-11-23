@@ -24,7 +24,7 @@ export default function FaqSection() {
         {['one', 'two', 'three', 'four'].map((item, idx) => (
           <Section.Card key={idx} className='p-0'>
             <button
-              className='open fc-col-open inline-flex w-full items-center justify-between p-4 text-left font-semibold transition'
+              className='open fc-col-open inline-flex w-full items-center justify-between text-left font-semibold transition'
               onClick={() => toggle(idx)}
             >
               {t(`data.${item}.question`)}
