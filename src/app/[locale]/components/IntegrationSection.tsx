@@ -1,5 +1,6 @@
+import Card from '@turistikrota/ui/cards/default'
+import Section from '@turistikrota/ui/section/landing'
 import { useTranslations } from 'next-intl'
-import Section from './Section'
 
 type Item = {
   title: string
@@ -47,13 +48,13 @@ export default function IntegrationSection() {
       <Section.Head title={t('title')} subtitle={t('subtitle')} />
       <div className='mt-16 grid grid-cols-1 gap-4 xl:grid-cols-2'>
         {Items.map((item, idx) => (
-          <Section.Card key={idx} className='flex items-center gap-6'>
+          <Card key={idx} className='flex items-center gap-6'>
             <i className={`bx w-16 text-7xl ${item.icon}`} />
             <div>
               <h5>{t(item.title)}</h5>
               <p className='text-slate-500 dark:text-slate-400'>{t(item.description)}</p>
             </div>
-          </Section.Card>
+          </Card>
         ))}
       </div>
     </Section>

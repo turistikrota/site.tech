@@ -1,6 +1,7 @@
+import Card from '@turistikrota/ui/cards/default'
+import Section from '@turistikrota/ui/section/landing'
 import { useTranslations } from 'next-intl'
 import React from 'react'
-import Section from './Section'
 
 type Item = {
   title: string
@@ -33,11 +34,11 @@ export default function WhatWeDoSection() {
       <Section.Head title={t('title')} subtitle={t('subtitle')} />
       <div className='mt-16 grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3'>
         {Items.map((item, idx) => (
-          <Section.Card key={idx}>
+          <Card key={idx}>
             <div className='flex h-12 w-12 items-center justify-center rounded-md bg-primary/10'>{item.icon}</div>
             <h4 className='mb-2 mt-5 text-lg font-medium'>{t(item.title)}</h4>
             <p className='text-slate-500 dark:text-slate-400'>{t(item.description)}</p>
-          </Section.Card>
+          </Card>
         ))}
       </div>
     </Section>

@@ -1,7 +1,8 @@
+import Card from '@turistikrota/ui/cards/default'
+import Section from '@turistikrota/ui/section/landing'
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import Link from 'next/link'
-import Section from './Section'
 
 type Tag = 'Design' | 'Development' | 'Marketing' | 'Branding' | 'UI/UX' | 'Photography' | 'Video' | 'Business'
 
@@ -112,7 +113,7 @@ export default function BlogSection({ locale }: Props) {
       <Section.Head title={t('title')} subtitle={t('subtitle')} />
       <div className='mt-16 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4'>
         {Blogs.map((blog, idx) => (
-          <Section.Card key={idx} className='group'>
+          <Card key={idx} className='group'>
             <div className='relative'>
               <div className='absolute end-4 top-3'>
                 <span className={`rounded-md px-3 py-1 text-sm font-medium text-white ${TagClasses[blog.tag]}`}>
@@ -147,7 +148,7 @@ export default function BlogSection({ locale }: Props) {
                 </Link>
               </p>
             </div>
-          </Section.Card>
+          </Card>
         ))}
       </div>
     </Section>

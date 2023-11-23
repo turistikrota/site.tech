@@ -1,5 +1,5 @@
+import Section from '@turistikrota/ui/section/landing'
 import { useTranslations } from 'next-intl'
-import Section from './Section'
 
 type Item = {
   title: string
