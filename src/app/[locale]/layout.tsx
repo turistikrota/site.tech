@@ -1,9 +1,7 @@
 import { LayoutProps } from '@/types/base'
+import '@turistikrota/fonts/verdana.css'
 import '@turistikrota/ui/assets/config.css'
 import '@turistikrota/ui/assets/default.css'
-import CubeEffect from '@turistikrota/ui/design/cube'
-import GlassEffect from '@turistikrota/ui/design/glass'
-import '@turistikrota/ui/fonts/verdana.css'
 import 'boxicons/css/boxicons.min.css'
 import type { Metadata } from 'next'
 import { NextIntlClientProvider } from 'next-intl'
@@ -90,9 +88,6 @@ export default async function RootLayout({ children, params: { locale } }: React
         <NextIntlClientProvider locale={locale} messages={messages}>
           {children}
         </NextIntlClientProvider>
-
-        <CubeEffect.All />
-        <GlassEffect.Fixed />
       </body>
     </html>
   )

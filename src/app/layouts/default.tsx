@@ -1,4 +1,4 @@
-import BasicFooter from '@/components/footers/BasicFooter'
+import BasicFooter from '@/components/footers/MagicFooter'
 import DefaultHeader from '@/components/headers/DefaultHeader'
 import React from 'react'
 
