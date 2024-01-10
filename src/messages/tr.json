@@ -18,6 +18,9 @@
     }
   },
   "footer": {
+    "terms": "Kullanım Koşulları",
+    "privacy-policy": "Gizlilik Politikası",
+    "cookies": "Çerezler",
     "copyright": "Turistikrota. Tüm hakları saklıdır."
   },
   "header": {

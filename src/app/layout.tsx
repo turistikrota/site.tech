@@ -1,7 +1,7 @@
 import { LayoutProps } from '@/types/base'
+import '@turistikrota/fonts/verdana.css'
 import '@turistikrota/ui/assets/config.css'
 import '@turistikrota/ui/assets/default.css'
-import '@turistikrota/ui/fonts/verdana.css'
 import 'boxicons/css/boxicons.min.css'
 import type { Metadata } from 'next'
 import './globals.css'

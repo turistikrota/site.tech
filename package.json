@@ -11,7 +11,8 @@
   },
   "dependencies": {
     "@formatjs/intl-localematcher": "^0.5.2",
-    "@turistikrota/ui": "^0.7.6",
+    "@turistikrota/fonts": "^1.0.1",
+    "@turistikrota/ui": "^1.1.8",
     "boxicons": "^2.1.4",
     "next": "14.0.3",
     "next-intl": "^3.1.2",
