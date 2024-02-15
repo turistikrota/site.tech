@@ -40,6 +40,23 @@
       "select": "Profil Seç",
       "profile": "Profil",
       "loading": "Yükleniyor..."
+    },
+    "sites": {
+      "main": {
+        "link": "https://turistikrota.com/tr"
+      },
+      "places": {
+        "link": "https://yerler.turistikrota.com",
+        "title": "yerler"
+      },
+      "listing": {
+        "link": "https://ilan.turistikrota.com",
+        "title": "ilan"
+      },
+      "tech": {
+        "link": "/",
+        "title": "teknoloji ekibi"
+      }
     }
   },
   "home": {
